@@ -25,7 +25,7 @@ export function HealthProcessChart() {
     >
       <LineChart
         accessibilityLayer
-        data={healthProcessChartData}
+        data={healthProcessChartData.data}
         margin={{
           left: 12,
           right: 12,

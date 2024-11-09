@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import dashboardReducer from "./slices/dashboardSlice";
-
+import ownRecordReducer from "./slices/ownRecordSlice";
 export const makeStore = () => {
   return configureStore({
     reducer: {
       dashboard: dashboardReducer,
+      ownRecord: ownRecordReducer,
     },
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({

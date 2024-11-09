@@ -21,7 +21,7 @@ const Footer = () => {
           {menuItems.map((menu) => (
             <li
               key={menu.label}
-              className="cursor-pointer hover:text-primary-300"
+              className="cursor-pointer hover:text-primary-400"
             >
               <Link href={menu.path}>{menu.label}</Link>
             </li>

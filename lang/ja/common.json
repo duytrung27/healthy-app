@@ -19,6 +19,19 @@
   },
   "Common": {
     "More Record": "記録をもっと見る"
+  },
+  "Own Record": {
+    "My Body Record": "自分のカラダの記録",
+    "My Exercise Record": "自分の運動の記録",
+    "My Diary Record": "自分の日記",
+    "Body Record": "BODY RECORD",
+    "My Exercise": "MY EXERCISE",
+    "My Diary": "MY DIARY",
+    "More Record": "記録をもっと見る",
+    "Day": "日",
+    "Week": "週",
+    "Month": "月",
+    "Year": "年"
   }
 }
   

@@ -43,23 +43,19 @@ const Header = () => {
     },
     {
       label: t("Weight Graph"),
-      path: "/",
     },
     {
       label: t("Goal"),
-      path: "/",
     },
     {
       label: t("Selected Course"),
-      path: "/",
     },
     {
       label: t("Column List"),
-      path: "/",
+      path: "/column-list",
     },
     {
       label: t("Setting"),
-      path: "/",
     },
   ];
 
@@ -116,16 +112,16 @@ const Header = () => {
         </ul>
         <div
           className={`absolute top-16 right-0 bg-gray-400 w-[280px] transition-all duration-300 ease-in-out ${
-            openMenu ? "opacity-100 h-auto" : "opacity-0 h-0"
+            openMenu ? "opacity-100 h-auto" : "opacity-0 h-0 invisible"
           }`}
         >
           <ul>
             {subMenuItems.map((menu) => (
               <li
                 key={menu.label}
-                className={`text-lg font-light py-4 px-8  cursor-pointer hover:opacity-80 shadow`}
+                className={`text-lg font-light py-4 px-8 cursor-pointer hover:opacity-80 shadow`}
                 onClick={() => {
-                  router.push(menu.path);
+                  menu.path && router.push(menu.path);
                   setOpenMenu(false);
                 }}
               >

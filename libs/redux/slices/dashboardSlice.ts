@@ -1,4 +1,3 @@
-import Cookies from "js-cookie";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { MealData } from "@/types/Meal";
 import { MealListData } from "@/libs/data/meal-data";

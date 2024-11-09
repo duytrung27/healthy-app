@@ -19,5 +19,18 @@
   },
   "Common": {
     "More Record": "More Record"
+  },
+  "Own Record": {
+    "My Body Record": "My Body Record",
+    "My Exercise Record": "My Exercise Record",
+    "My Diary Record": "My Diary Record",
+    "Body Record": "BODY RECORD",
+    "My Exercise": "MY EXERCISE",
+    "My Diary": "MY DIARY",
+    "Day": "Day",
+    "Week": "Week",
+    "Month": "Month",
+    "Year": "Year",
+    "More Record": "More Record"
   }
 }
