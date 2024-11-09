@@ -10,10 +10,8 @@ import dayjs from "dayjs";
 import { HealthProcessChart } from "@/components/chart/HealthProcessChart";
 import MealMenu from "@/components/home/MealMenu";
 import MealList from "@/components/home/MealList";
-import { MealListData } from "@/libs/data/meal-data";
 
 const Dashboard = () => {
-  const t = useTranslations("Header");
   return (
     <div className="">
       <div className="w-full h-[312px] max-w-5xl mx-auto">

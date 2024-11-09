@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { MyDiaryData } from "@/types/OwnRercord";
-import { MyDiaryListData } from "@/libs/data/my-own-data";
+import { myDiaryListData } from "@/libs/data/my-own-data";
 
 interface OwnRecordState {
   page: number;
@@ -19,7 +19,7 @@ export const fetchMyDiaryList = createAsyncThunk(
     // Assuming the API call takes 200ms
     await new Promise((resolve) => setTimeout(resolve, 200));
 
-    const data = MyDiaryListData.slice(page * 8, (page + 1) * 8);
+    const data = myDiaryListData.slice(page * 8, (page + 1) * 8);
     return {
       page,
       data,

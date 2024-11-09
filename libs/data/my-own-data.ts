@@ -1,6 +1,6 @@
 import { MyDiaryData, MyExerciseData } from "@/types/OwnRercord";
 
-export const MyExerciseList: MyExerciseData[] = [
+export const myExerciseList: MyExerciseData[] = [
   {
     date: "2024-11-21T00:00:00.000Z",
     name: "家事全般（立位・軽い）",
@@ -75,7 +75,7 @@ export const MyExerciseList: MyExerciseData[] = [
   },
 ];
 
-export const MyDiaryListData: MyDiaryData[] = [
+export const myDiaryListData: MyDiaryData[] = [
   {
     date: "2024-11-11T23:25:00Z",
     content:

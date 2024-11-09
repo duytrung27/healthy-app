@@ -7,7 +7,7 @@ import Meal6 from "@/public/images/meal6.png";
 import Meal7 from "@/public/images/meal7.png";
 import { MealData } from "@/types/Meal";
 
-export const MealListData: MealData[] = [
+export const mealListData: MealData[] = [
   {
     date: "2024-05-21T00:00:00.000Z",
     img: Meal1,

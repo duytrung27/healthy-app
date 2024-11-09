@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { MealData } from "@/types/Meal";
-import { MealListData } from "@/libs/data/meal-data";
+import { mealListData } from "@/libs/data/meal-data";
 
 interface DashboardState {
   meal: {
@@ -26,8 +26,8 @@ export const fetchMealList = createAsyncThunk(
     await new Promise((resolve) => setTimeout(resolve, 200));
 
     const filteredMeals = type
-      ? MealListData.filter((item) => item.type === type)
-      : MealListData;
+      ? mealListData.filter((item) => item.type === type)
+      : mealListData;
 
     const data = filteredMeals.slice(page * 8, (page + 1) * 8);
     return {

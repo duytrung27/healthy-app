@@ -1,7 +1,7 @@
 "use client";
 
 import { healthProcessChartData } from "@/libs/data/chart-data";
-import { MyExerciseList } from "@/libs/data/my-own-data";
+import { myExerciseList } from "@/libs/data/my-own-data";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import React from "react";
@@ -20,7 +20,7 @@ const MyExercise = () => {
         </h2>
       </div>
       <div className="grid grid-cols-2 gap-x-12 gap-y-4 h-[192px] overflow-y-auto text-white">
-        {MyExerciseList.map((item) => (
+        {myExerciseList.map((item) => (
           <li
             key={item.date}
             className="flex justify-between border-b border-gray-400 pb-2 mr-8"
