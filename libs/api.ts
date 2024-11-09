@@ -1,4 +1,3 @@
-import { LoginRequest, LoginResponse } from "@/types/auth/Login";
 import axios, { AxiosResponse } from "axios";
 import Cookies from "js-cookie";
 
@@ -11,13 +10,7 @@ const API = {
       LOGIN: "/auth/login",
     },
   },
-  auth: {
-    login: (payload: LoginRequest): Promise<AxiosResponse<LoginResponse>> => {
-      return API.apiInstance.post(API.API_PATH.AUTH.LOGIN, {
-        ...payload,
-      });
-    },
-  },
+  auth: {},
 };
 
 API.apiInstance.interceptors.request.use((config) => {
