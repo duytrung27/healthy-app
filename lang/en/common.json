@@ -1,5 +1,7 @@
 {
-  "Test": {
-    "test": "test"
+  "Header": {
+    "My Own Record": "My Own Record",
+    "Challenge": "Challenge",
+    "Notice": "Notice"
   }
 }

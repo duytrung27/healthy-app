@@ -1,6 +1,8 @@
 {
-    "Test": {
-      "test": "test"
+  "Header": {
+    "My Own Record": "自分の記録",
+    "Challenge": "チャレンジ",
+    "Notice": "お知らせ"
     }
   }
   

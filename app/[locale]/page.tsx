@@ -1,20 +1,14 @@
 "use client";
 
-import { useAppSelector } from "@/libs/redux/hook";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
-export default function Home() {
-  const { loggedIn } = useAppSelector((state) => state.app);
-  const router = useRouter();
+const Dashboard = () => {
+  const t = useTranslations("Header");
+  return (
+    <div>
+      {t("My Own Record")} {t("Challenge")}
+    </div>
+  );
+};
 
-  useEffect(() => {
-    if (!loggedIn) {
-      router.push("/login");
-    } else {
-      router.push("/dashboard");
-    }
-  }, [loggedIn, router]);
-
-  return <></>;
-}
+export default Dashboard;
