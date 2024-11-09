@@ -32,5 +32,12 @@
     "Month": "Month",
     "Year": "Year",
     "More Record": "More Record"
+  },
+  "Column List": {
+    "Recommend": "Recommend",
+    "Diet": "Diet",
+    "Beauty": "Beauty",
+    "Health": "Health",
+    "More Record": "More Record"
   }
 }

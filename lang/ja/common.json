@@ -32,6 +32,17 @@
     "Week": "週",
     "Month": "月",
     "Year": "年"
+  },
+  "Column List": {
+    "Recommend": "オススメ",
+    "Diet": "ダイエット",
+    "Beauty": "美容",
+    "Health": "健康",
+    "RecommendedColumn": "RECOMMENDED COLUMN",
+    "RecommendedDiet": "RECOMMENDED DIET",
+    "RecommendedBeauty": "RECOMMENDED BEAUTY",
+    "RecommendedHealth": "RECOMMENDED HEALTH",
+    "More Record": "記録をもっと見る"
   }
 }
   
