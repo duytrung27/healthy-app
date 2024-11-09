@@ -40,8 +40,9 @@ const MealMenu = () => {
     setActiveMenu(value);
   };
 
-  const hexagonItem = (item: MealMenuType) => (
+  const hexagonItem = (item: MealMenuType, idx: number) => (
     <div
+      key={idx}
       className={`w-[126px] h-[136px] clip-hexagon flex items-center justify-center relative px-2 cursor-pointer ${
         activeMenu === item.type
           ? "bg-slate-400 shadow-lg"
@@ -58,7 +59,7 @@ const MealMenu = () => {
 
   return (
     <div className="flex items-center justify-evenly">
-      {menu.map((item) => hexagonItem(item))}
+      {menu.map((item, idx) => hexagonItem(item, idx))}
     </div>
   );
 };
