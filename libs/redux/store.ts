@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import appReducer from "./slices/appSlice";
+import dashboardReducer from "./slices/dashboardSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      app: appReducer,
+      dashboard: dashboardReducer,
     },
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({

@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <section className="h-32 w-full bg-dark-500 text-light flex flex-col items-center justify-center">
-      <div className="container w-full h-full">
+      <div className="container max-w-4xl w-full h-full">
         <ol className="h-full flex items-center gap-16 font-light text-[11px]">
           {menuItems.map((menu) => (
             <li

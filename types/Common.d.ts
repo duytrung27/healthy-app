@@ -6,3 +6,9 @@ export type Menu = {
   path: string;
   badge?: number;
 };
+
+export type MealMenuType = {
+  label: string;
+  icon: StaticImageData;
+  type: "morning" | "lunch" | "dinner" | "snack" | "";
+};

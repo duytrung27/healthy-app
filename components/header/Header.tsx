@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import Logo from "@/public/images/logo.png";
@@ -13,6 +13,7 @@ import { Menu } from "@/types/Common";
 
 const Header = () => {
   const t = useTranslations("Header");
+  const pathname = usePathname();
   const router = useRouter();
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -20,17 +21,17 @@ const Header = () => {
     {
       label: t("My Own Record"),
       icon: OwnRecordIcon,
-      path: "/",
+      path: "/own-record",
     },
     {
       label: t("Challenge"),
       icon: ChallengeIcon,
-      path: "/challenge",
+      path: "",
     },
     {
       label: t("Notice"),
       icon: NoticeIcon,
-      path: "/notice",
+      path: "",
       badge: 1,
     },
   ];
@@ -38,7 +39,7 @@ const Header = () => {
   const subMenuItems: Menu[] = [
     {
       label: t("My Own Record"),
-      path: "/",
+      path: "/own-record",
     },
     {
       label: t("Weight Graph"),
@@ -64,7 +65,7 @@ const Header = () => {
 
   return (
     <section className="fixed z-50 top-0 left-0 w-full h-16 bg-dark-500 text-light flex flex-col">
-      <div className="container relative h-full flex items-center justify-between">
+      <div className="container max-w-4xl relative h-full flex items-center justify-between">
         <Image
           src={Logo}
           alt="logo"
@@ -74,28 +75,34 @@ const Header = () => {
           onClick={() => router.push("/")}
         />
         <ul className="flex items-center gap-10">
-          {menuItems.map((menu) => (
-            <li
-              key={menu.label}
-              className="flex items-center gap-2 cursor-pointer hover:opacity-80"
-              onClick={() => router.push(menu.path)}
-            >
-              <div className="relative">
-                <Image
-                  src={menu.icon ?? ""}
-                  alt={menu.label}
-                  width={32}
-                  height={32}
-                />
-                {menu.badge && (
-                  <span className="bg-primary-500 text-light font-inter w-4 h-4 absolute top-0 -right-2 flex items-center justify-center   text-[10px] rounded-full">
-                    {menu.badge}
-                  </span>
-                )}
-              </div>
-              <h4 className="font-light text-base">{menu.label}</h4>
-            </li>
-          ))}
+          {menuItems.map((menu) => {
+            const active = menu.path && pathname.includes(menu.path);
+
+            return (
+              <li
+                key={menu.label}
+                className={`flex items-center gap-2 cursor-pointer hover:opacity-80 hover:text-primary-400 ${
+                  active ? "text-primary-400" : ""
+                }`}
+                onClick={() => menu.path && router.push(menu.path)}
+              >
+                <div className="relative">
+                  <Image
+                    src={menu.icon ?? ""}
+                    alt={menu.label}
+                    width={32}
+                    height={32}
+                  />
+                  {menu.badge && (
+                    <span className="bg-primary-500 text-light font-inter w-4 h-4 absolute top-0 -right-2 flex items-center justify-center text-[10px] rounded-full">
+                      {menu.badge}
+                    </span>
+                  )}
+                </div>
+                <h4 className="font-light text-base">{menu.label}</h4>
+              </li>
+            );
+          })}
           <li
             className="flex items-center gap-2 cursor-pointer hover:opacity-80 ml-5"
             onClick={() => setOpenMenu(!openMenu)}

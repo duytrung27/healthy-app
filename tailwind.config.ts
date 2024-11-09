@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "primary-300-400":
+          "linear-gradient(32.95deg, #FFCC21 30%, #FF963C 90%)",
+      },
       colors: {
         light: "#FFFFFF",
 
@@ -37,13 +41,25 @@ const config = {
         gray: {
           400: "#777777",
         },
-        gradient: {
-          "primary-300-400":
-            "linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%)",
-        },
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+      },
+      maxWidth: {
+        "4xl": "960px",
+        "5xl": "1280px",
+      },
+      dropShadow: {
+        text: "0px 0px 2px #FC7400",
+      },
+      animation: {
+        spin: "spin 1s linear infinite",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
     },
   },
