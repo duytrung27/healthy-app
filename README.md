@@ -10,6 +10,7 @@ A healthcare web application built using Next.js, React, Redux Toolkit, and Tail
 - [Running the Project](#running-the-project)
 - [Building the Project](#building-the-project)
 - [Project Structure](#project-structure)
+- [Data flow](#data-flow)
 - [Dependencies](#dependencies)
 - [Scripts](#scripts)
 - [Configuration](#configuration)
@@ -93,6 +94,12 @@ ARENT-HEALTHCARE    /
 ├── tailwind.config.ts    # TailwindCSS configuration
 ├── tsconfig.json         # TypeScript configuration
 └── tsconfig.tsbuildinfo  # TypeScript build info (auto-generated)
+
+## Data flow
+
+- API Data Fetching: Data is fetched via APIs using axios and then dispatched to the Redux store. In this project, the data will be mocked and not fetched from the server. We assume that the data is already available in the Redux store.
+- State Management: Components access data from the Redux store using react-redux to subscribe to specific state slices. This keeps components reactive to state changes.
+- Rendering: The application uses Next.js's server-side rendering (SSR) for faster loading and better SEO, fetching data as needed before rendering components.
 
 ## Dependencies
 

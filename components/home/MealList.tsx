@@ -31,7 +31,7 @@ const MealList = () => {
   );
 
   useEffect(() => {
-    dispatch(fetchMealList({ page: 0, type }));
+    dispatch(fetchMealList({ page: 0, type: "" }));
   }, [dispatch]);
 
   const handleMoreRecord = () => {
@@ -40,7 +40,7 @@ const MealList = () => {
 
   return (
     <div className="flex flex-col items-center pb-12">
-      <div className="grid grid-cols-4 gap-2 py-8">
+      <div className="w-full grid mx-5 grid-cols-1 md:grid-cols-4 gap-2 py-8">
         {data.map((item) => (
           <MealItem key={item.date} data={item} />
         ))}
