@@ -38,6 +38,10 @@
     "Diet": "Diet",
     "Beauty": "Beauty",
     "Health": "Health",
-    "More Record": "More Record"
+    "More Record": "More Record",
+    "RecommendedColumn": "RECOMMENDED COLUMN",
+    "RecommendedDiet": "RECOMMENDED DIET",
+    "RecommendedBeauty": "RECOMMENDED BEAUTY",
+    "RecommendedHealth": "RECOMMENDED HEALTH"
   }
 }
