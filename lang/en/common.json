@@ -2,6 +2,19 @@
   "Header": {
     "My Own Record": "My Own Record",
     "Challenge": "Challenge",
-    "Notice": "Notice"
+    "Notice": "Notice",
+    "Weight Graph": "Weight Graph",
+    "Goal": "Goal",
+    "Selected Course": "Selected Course",
+    "Column List": "Column List",
+    "Setting": "Setting"
+  },
+  "Footer": {
+    "Register": "Register",
+    "Company": "Company",
+    "Terms of Service": "Terms of Service",
+    "Privacy Policy": "Privacy Policy",
+    "Consumption Tax": "Consumption Tax",
+    "Contact Us": "Contact Us"
   }
 }

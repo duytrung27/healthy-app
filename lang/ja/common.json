@@ -2,7 +2,20 @@
   "Header": {
     "My Own Record": "自分の記録",
     "Challenge": "チャレンジ",
-    "Notice": "お知らせ"
-    }
+    "Notice": "お知らせ",
+    "Weight Graph": "体重グラフ",
+    "Goal": "目標",
+    "Selected Course": "選択中のコース",
+    "Column List": "コラム一覧",
+    "Setting": "設定"
+  },
+  "Footer": {
+    "Register": "会員登録",
+    "Company": "運営会社",
+    "Terms of Service": "利用規約",
+    "Privacy Policy": "個人情報の取扱について",
+    "Consumption Tax": "特定商取引法に基づく表記",
+    "Contact Us": "お問い合わせ"
   }
+}
   

@@ -12,7 +12,6 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
         lg: "960px",
         "2xl": "1400px",
@@ -23,27 +22,24 @@ const config = {
         light: "#FFFFFF",
 
         primary: {
-          300: "#FFD966",
-          400: "#FF9F40",
-          500: "#FF7A29",
+          300: "#FFCC21",
+          400: "#FF963C",
+          500: "#EA6C00",
         },
-
         secondary: {
-          300: "#7EE1A3",
+          300: "#8FE9D0",
+        },
+        dark: {
+          500: "#414141",
+          600: "#2E2E2E",
         },
 
+        gray: {
+          400: "#777777",
+        },
         gradient: {
           "primary-300-400":
             "linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%)",
-
-          dark: {
-            500: "#333333",
-            600: "#000000",
-          },
-
-          gray: {
-            400: "#7D7D7D",
-          },
         },
       },
       fontFamily: {
